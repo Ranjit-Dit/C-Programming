@@ -1,0 +1,7 @@
+{
+  "vscode_vibrancy.opacity": 0.2,
+  "vscode_vibrancy.preferredLightTheme": "Default Dark",
+  "vscode_vibrancy.imports": ["/path/to/file"],
+  "vscode_vibrancy.type": "auto",
+  "vscode_vibrancy.windowMode": "frameless-transparent"
+}
