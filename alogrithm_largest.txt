@@ -1,0 +1,13 @@
+Algorithm 2: Largest of Three Numbers(a,b,c)
+
+step 1: Start Program
+step 2: Declare variables a,b,c
+step 1: Read input values for a,b, and c
+step 1: if a > b:
+        if A> c --> Display "a is Largest"
+        Else --> Display " c is Largest"
+step 1: Else (when b > a)
+        is 
+step 1: Start Program
+step 1: Start Program
+        
