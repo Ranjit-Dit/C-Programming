@@ -1,26 +1,34 @@
 #include <stdio.h>
-
-int binarySearch(int num[], int target, int len)
+#define true 1
+#define false 0
+int bubbleSorting(int num[], int len)
 {
-    int left = 0, right = len - 1;
-    while (left <= right)
+    int swapped;
+    for (int i = 0; i < len; i++)
     {
-        int mid = left + (right - left) / 2;
-        if (num[mid] == target)
-            return mid;
-        if (target > num[mid])
-            left = mid + 1;
-        else
-            right = mid - 1;
+        swapped = false;
+        for (int j = 0; j < len - i - 1; j++)
+        {
+            if (num[j] > num[j + 1])
+            {
+                int temp = num[j];
+                num[j] = num[j + 1];
+                num[j + 1] = temp;
+                swapped = true;
+            }
+        }
+        if (!swapped)
+            break;
     }
-    return -1;
+    for (int i = 0; i < len; i++)
+    {
+        printf("%d\n", num[i]);
+    }
 }
 
 int main()
 {
-
-    int nums[] = {2, 5, 6, 8, 9, 11, 23, 42};
-    int index = binarySearch(nums, 42, sizeof(nums) / sizeof(nums[0]));
-    printf("So the index of the target is %d", index);
+    int nums[] = {2, 4, 1, 5, 6, 3, 4, 7, 5, 3};
+    bubbleSorting(nums, sizeof(nums) / sizeof(nums[0]));
     return 0;
 }
