@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-// Write a C program to print Sum and Average of  N numbers.
-
->>>>>>> master
 #include <stdio.h>
 
 int main()
