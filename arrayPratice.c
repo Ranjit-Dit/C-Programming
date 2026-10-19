@@ -42,6 +42,7 @@ int main()
     float numx[] = {1.1, 2.2, 3.3, 4.4, 5.5};
     char numc[] = "ranjit";
     // == > string '\0' int i;
+    int i;
     for (i = 0; i < 5; i++)
     {
         printf("%d\n", num[i]);
