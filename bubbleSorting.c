@@ -19,7 +19,7 @@ int bubbleSorting(int num[], int len)
         }
         if (!swapped)
             break;
-    }
+    } //   printing
     for (int i = 0; i < len; i++)
     {
         printf("%d\n", num[i]);
